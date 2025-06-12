@@ -1,0 +1,72 @@
+/* General */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* Cards */
+.card {
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Dark Mode */
+.theme-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* Default - Light Theme */
+.theme-btn.light-mode {
+    background-color: #fff !important;
+    color: #000;
+}
+
+
+/* Dark Theme */
+.theme-btn.dark-mode {
+    background-color: #000 !important;
+    color: #fff;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+body.dark-mode .btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+}
+
+#theme-toggle {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
